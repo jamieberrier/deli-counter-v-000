@@ -10,7 +10,7 @@ def line(katz_deli)
     counter = 0
     until counter == katz_deli.size
       katz_deli.each_with_index do |name, index|
-        name = "#{counter + 1}. #{name}"
+        name = "#{index + 1}. #{name}"
         counter += 1
       end
       puts "The line is currently: 1. #{katz_deli.join(" ")}"
