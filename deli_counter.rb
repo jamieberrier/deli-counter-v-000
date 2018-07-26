@@ -9,11 +9,11 @@ def line(katz_deli)
   else
     counter = 0
     until counter == katz_deli.size
-      katz_deli.each_with_index do |name|
+      katz_deli.each_with_index do |name, index|
         name = "#{counter + 1}. #{name}"
         counter += 1
       end
-      puts "The line is currently: #{katz_deli.join(" ")}"
+      puts "The line is currently: 1. #{katz_deli.join(" ")}"
     end
     #puts "The line is currently: #{katz_deli.join(" ")}"
   end
