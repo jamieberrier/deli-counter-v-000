@@ -7,7 +7,7 @@ def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
   else
-    katz_deli.collect!_with_index{|name| #{index + 1}. #{name}}
+    katz_deli.collect!_with_index{|name, index| "#{index + 1}. #{name}"}
     katz_deli.each_with_index do |name, index|
       name = "#{index + 1}. #{name}"
       binding.pry
