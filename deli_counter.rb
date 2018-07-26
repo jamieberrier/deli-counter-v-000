@@ -9,7 +9,7 @@ def line(katz_deli)
   else
     counter = 1
     katz_deli.each do |name|
-      name << " #{counter + 1}."
+      name = name.unshift("#{counter}. ")
       counter += 1
     end
     puts "The line is currently: 1. #{katz_deli.join(" ")}"
