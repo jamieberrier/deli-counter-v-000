@@ -9,7 +9,7 @@ def line(katz_deli)
   else
     counter = 0
     until counter == katz_deli.size
-      katz_deli.each do |name|
+      katz_deli.each_with_index do |name|
         name = "#{counter + 1}. #{name}"
         counter += 1
       end
