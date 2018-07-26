@@ -13,7 +13,7 @@ def line(katz_deli)
         name = "#{index + 1}. #{name}"
         counter += 1
       end
-      puts "The line is currently: 1. #{katz_deli.join(" ")}"
+      puts "The line is currently: #{katz_deli.join(" ")}"
     end
     #puts "The line is currently: #{katz_deli.join(" ")}"
   end
