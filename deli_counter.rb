@@ -8,10 +8,11 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     counter = 0
-    until katz_deli.size == 
-    katz_deli.each do |name|
-      name = "#{counter + 1}. #{name}"
-      counter += 1
+    until counter == katz_deli.size
+      katz_deli.each do |name|
+        name = "#{counter + 1}. #{name}"
+        counter += 1
+      end
     end
     puts "The line is currently: 1. #{katz_deli.join(" ")}"
   end
