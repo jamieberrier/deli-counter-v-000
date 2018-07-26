@@ -10,7 +10,7 @@ def line(katz_deli)
     katz_deli.each do |name|
       name << " #{katz_deli.size + 1}."
     end
-    puts "The line is currently: 1. #{katz_deli.join(" #{katz_deli.size}. ")}"
+    puts "The line is currently: 1. #{katz_deli.join(" ")}"
   end
 end
 
