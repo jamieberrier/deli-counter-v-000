@@ -10,7 +10,7 @@ def line(katz_deli)
     counter = 0
     until counter == katz_deli.size
       katz_deli.each_with_index do |name|
-        name = "#{katz_deli.index[counter] + 1}. #{name}"
+        name = "#{katz_deli.index(counter) + 1}. #{name}"
         counter += 1
       end
     end
