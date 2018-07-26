@@ -8,9 +8,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     puts "The line is currently: #{katz_deli}"
-    katz_deli.each do |name|
-      puts "#{katz_deli.size}. #{name} "
-    end
+    # katz_deli.each do |name|
+    #   puts "#{katz_deli.size}. #{name} "
+    # end
   end
 end
 
