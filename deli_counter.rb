@@ -8,7 +8,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each do |name|
-      name << ""
+      name << " #{katz_deli.size + 1}."
     end
     puts "The line is currently: 1. #{katz_deli.join(" #{katz_deli.size}. ")}"
   end
