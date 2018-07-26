@@ -9,6 +9,7 @@ def line(katz_deli)
   else
     katz_deli.each_with_index do |name, index|
       name = "#{index + 1}. #{name}"
+      binding.pry
     end
     puts "The line is currently: #{katz_deli.join(" ")}"
   end
